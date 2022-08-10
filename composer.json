@@ -1,0 +1,31 @@
+{
+    "name": "chartron-routes/charts",
+    "description": "Charting library for laravel",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/contracts": "^7.14.1|^8.0|^9.0",
+        "illuminate/http": "^7.14.1|^8.0|^9.0",
+        "illuminate/console": "^7.14.1|^8.0|^9.0",
+        "illuminate/support": "^7.14.1|^8.0|^9.0"
+    },
+    "authors": [
+        {
+          "name": "James Yan",
+          "email": "jamesyancassiomacedo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Chartron\\Charts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yanz\\Charts\\ChartsServiceProvider"
+            ]
+        }
+    }
+}
