@@ -66,7 +66,7 @@ class Registrar
                 ->prefix($globalPrefixArray->merge($prefixArray)->implode('/'))
                 ->middleware([...$globalMiddlewares, ...($instance->middlewares ?? [])])
                 ->name("{$globalRouteNamePrefix}.{$routeName}")
-                ->get($name, 'ConsoleTVs\Charts\ChartsController')
+                ->get($name, 'Yanz\Charts\ChartsController')
                 ->defaults('chart', $instance);
         }
     }
