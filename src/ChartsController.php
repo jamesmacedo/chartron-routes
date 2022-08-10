@@ -10,6 +10,6 @@ class ChartsController extends BaseController
 {
     public function __invoke(Request $request, ...$args)
     {
-        return new JsonResponse($args[0]->handler($request)->toObject());
+        return new JsonResponse($args[0]->handler($request));
     }
 }

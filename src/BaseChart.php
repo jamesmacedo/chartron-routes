@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ChartronRoute\Charts;
 
-use Chartron\PHP\Chartron;
+use Chartron\APP\Chartron;
 use Illuminate\Http\Request;
 use ReflectionClass;
 
@@ -41,7 +41,7 @@ abstract class BaseChart
      * Handles the HTTP request of the chart. This must always
      * return the chart instance. Do not return a string or an array.
      */
-    abstract public function handler(Request $request): Chartron;
+    abstract public function handler(Request $request);
 
     public static function __set_state(array $properties)
     {
