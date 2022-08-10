@@ -1,6 +1,6 @@
 <?php
 
-namespace ConsoleTVs\Charts;
+namespace ChartronRoute\Charts;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

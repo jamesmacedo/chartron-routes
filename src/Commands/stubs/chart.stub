@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace DummyNamespace;
 
-use Yanz\Charts\BaseChart;
+use ChartronRoute\Charts\BaseChart;
 use Illuminate\Http\Request;
 use Chartron\APP\Chartron;
 
@@ -15,7 +15,7 @@ class DummyClass extends BaseChart
      * It must always return an instance of Chartron
      * and never a string or an array.
      */
-    public function handler(Request $request): Chartisan
+    public function handler(Request $request): Chartron
     {
         return Chartron::build()
             ->labels(['First', 'Second', 'Third'])

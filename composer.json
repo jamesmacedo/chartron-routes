@@ -18,13 +18,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Chartron\\Charts\\": "src/"
+            "ChartronRoute\\Charts\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Yanz\\Charts\\ChartsServiceProvider"
+                "ChartronRoute\\Charts\\ChartsServiceProvider"
             ]
         }
     }

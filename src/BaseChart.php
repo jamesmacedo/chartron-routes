@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ConsoleTVs\Charts;
+namespace ChartronRoute\Charts;
 
-use Chartisan\PHP\Chartisan;
+use Chartron\PHP\Chartron;
 use Illuminate\Http\Request;
 use ReflectionClass;
 
@@ -41,7 +41,7 @@ abstract class BaseChart
      * Handles the HTTP request of the chart. This must always
      * return the chart instance. Do not return a string or an array.
      */
-    abstract public function handler(Request $request): Chartisan;
+    abstract public function handler(Request $request): Chartron;
 
     public static function __set_state(array $properties)
     {
