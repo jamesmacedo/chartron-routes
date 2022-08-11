@@ -15,11 +15,11 @@ class DummyClass extends BaseChart
      * It must always return an instance of Chartron
      * and never a string or an array.
      */
-    public function handler(Request $request): Chartron
+    public function handler(Request $request)
     {
-        return Chartron::build()
-            ->labels(['First', 'Second', 'Third'])
-            ->dataset('Sample', [1, 2, 3])
-            ->dataset('Sample 2', [3, 2, 1]);
+        $chartron = Chartron::build();
+        $chartron->labels(['First', 'Second', 'Third']);
+            
+        return $chartron->dataset('Sample 2', [3, 2, 1])->dataset('Sample', [1, 2, 3])->keep();
     }
 }
